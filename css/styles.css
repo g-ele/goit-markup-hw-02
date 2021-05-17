@@ -32,6 +32,9 @@
   letter-spacing: 0.03em;
   color: #000000;
 }
+.menu-list .current {
+  color: var(--accent-color);
+}
 .menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -56,6 +59,7 @@
 }
 /*-----End Header-----*/
 /*-----HERO-----*/
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -81,3 +85,49 @@
   background-color: var(--accent-color);
 }
 /*----END HERO-----*/
+/*----Advantages----*/
+.advantages-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.subtitle-adv {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.description-adv {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*----End Advantages----*/
+/*----Activity----*/
+/*----End Activity----*/
+/*----Team----*/
+/*----End Team----*/
+/*----Footer----*/
+.logo-link-studio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffff00;
+}
+.adress-link {
+}
+/*----End Footer----*/
