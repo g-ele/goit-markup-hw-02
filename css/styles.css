@@ -1,10 +1,14 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --main-color: #757575;
   --accent-color: #2196f3;
+  --main-letter-spacing: 0.03em;
 }
 .body {
   font-family: var(--main-font);
+  color: var(--main-color);
+  letter-spacing: var(--main-letter-spacing);
 }
 
 .list {
@@ -14,6 +18,25 @@
   text-decoration: none;
 }
 /*-----Components------*/
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: #212121;
+}
+.title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*-----End Components------*/
 /*-----Header------*/
 .logo-link-web {
@@ -21,7 +44,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+
   color: var(--accent-color);
 }
 .logo-link {
@@ -29,7 +52,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+
   color: #000000;
 }
 .menu-list .current {
@@ -51,7 +74,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -69,6 +92,7 @@
   text-transform: uppercase;
 }
 .modal-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.89;
@@ -86,38 +110,33 @@
 }
 /*----END HERO-----*/
 /*----Advantages----*/
-.advantages-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .subtitle-adv {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   color: #212121;
 }
 .description-adv {
-  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 /*----End Advantages----*/
 /*----Activity----*/
 /*----End Activity----*/
 /*----Team----*/
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: #212121;
+}
+.description-team {
+  font-size: 16px;
+  line-height: 1.19;
+}
 /*----End Team----*/
 /*----Footer----*/
 .logo-link-studio {
@@ -129,5 +148,57 @@
   color: #ffff00;
 }
 .adress-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #ffff00;
+}
+.adress-link-mail-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #000000;
 }
 /*----End Footer----*/
+
+/*----Portfolio----*/
+.portfolio-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.our-projects-subtitle {
+  font-size: 18px;
+  line-height: 2;
+  font-family: var(--main-font);
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.our-projects-description {
+  font-family: var(--main-font);
+
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
