@@ -40,11 +40,6 @@
 /*-----End Components------*/
 /*-----Header------*/
 .logo-link-web {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
   color: var(--accent-color);
 }
 .logo-link {
@@ -186,6 +181,7 @@
 }
 .our-projects-subtitle {
   font-size: 18px;
+  font-style: normal;
   line-height: 2;
   font-family: var(--main-font);
   letter-spacing: 0.06em;
